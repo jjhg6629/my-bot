@@ -1,8 +1,4 @@
-aiogram>=3.0.0
-aiohttp
-requests
-httpx
-cachetools
-curl_cffi
 pyTelegramBotAPI
+faker
+
 
