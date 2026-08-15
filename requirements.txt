@@ -3,4 +3,5 @@ aiohttp
 requests
 httpx
 cachetools
+curl_cffi
 
