@@ -10,6 +10,7 @@ import telebot
 from telebot import types
 from gatet import *
 from reg import reg
+import json
 
 stopuser = {}
 token = '8634891532:AAFeaIfM5Wj3R4PQxjf-rvlfErWh7vUfxrQ'
