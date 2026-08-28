@@ -16,17 +16,7 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Cache Buildozer global directory
-      uses: actions/cache@v4
-      with:
-        path: |
-          .buildozer
-          /home/runner/.buildozer
-        key: ${{ runner.os }}-buildozer-${{ hashFiles('buildozer.spec') }}
-        restore-keys: |
-          ${{ runner.os }}-buildozer-
-
-    - name: Install Buildozer and dependencies
+    - name: Install dependencies
       run: |
         sudo apt update
         sudo apt install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev llvm libffi-dev liblzma-dev libstdc++6
