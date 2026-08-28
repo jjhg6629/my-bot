@@ -16,6 +16,11 @@ jobs:
       with:
         python-version: '3.10'
 
+    - name: Clean old cache and build files
+      run: |
+        rm -rf .buildozer
+        rm -rf bin/*.apk
+
     - name: Install dependencies
       run: |
         sudo apt update
